@@ -3,7 +3,7 @@
 - name: Install Sensu
   yum:
     name: "{{ sensu_pkg }}"
-    state: present
+    state: latest
   register: sensu_yum_install
   tags:
     - sensu_pkg
